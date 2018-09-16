@@ -4,10 +4,14 @@
     <% include ../partials/head %>
 </head>
 <body>
-    <h1>Search for a Movie</h1>
-    <form action="/results" method="GET">
-    <input type="text" placeholder="search term" name="search"/>
-    <input type="submit"/>
+    <div class="intro">
+        <h1 class="title">Welcome to Rotten Potatoes</h1>
+        <p class="introduction">Welcome to Rotten Potatoes, where you can find every movie out there and its rating, genre, runtime, and plot! Grab some popcorn and watch on!</p>
+        <h2>Search for a Movie</h2>
+        <form action="/results" method="GET">
+        <input type="text" placeholder="search term" name="search"/>
+        <input type="submit" id="search-bar"/>
+     </div>
 </form>
 </body>
 </html>

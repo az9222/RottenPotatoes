@@ -1,0 +1,63 @@
+.title {
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+}
+
+.notavailable {
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+    margin-top: 300px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.searchagain {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 42%;
+}
+
+body {
+    background-image: url('http://www.pptbackgrounds.org/uploads/film-movies-movie-making-minimalism-creative-backgrounds-wallpapers.jpg');
+    background-size: cover;
+}
+
+.intro {
+    margin-top: 300px;
+    margin-left: 20px;
+}
+
+.introduction {
+    font-size: 20px;
+}
+
+#search-bar:active {
+    background-color:#D2C6C6;
+}
+
+.results-title {
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+    margin-top: 300px;
+    font-size: 50px;
+}
+
+.d-block {
+    margin-left: 450px;
+    margin-top: 20px;
+}
+
+.carousel-caption {
+    font-size: 20px;
+    margin-left: 600px;
+}
+
+.SearchResults {
+    font-size: 20px;
+    margin-left: 1012px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}

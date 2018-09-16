@@ -1,6 +1,7 @@
 var express = require("express");
 var request = require("request");
 var app = express();
+app.use(express.static("public")); 
 app.set("view engine", "ejs");
 
 const port = process.env.port || 3000;
@@ -18,8 +19,12 @@ app.get("/results", function(req, res) {
     request(url, function (error, response, body){
         if (!error && response.statusCode === 200) {
             var data = JSON.parse(body);
-            res.render("results", {data: data, title: query})
-        }
+            if(!data.Search) {
+                res.render("notAvailable");
+            } else {
+                res.render("results", {data: data, title: query})
+            }
+        } 
     });
 });
 

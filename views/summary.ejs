@@ -4,7 +4,8 @@
     <% include ../partials/head %>
 </head>
 <body>
-    <div class="card" style="width: 18rem;">
+    <div class="card-container">
+    <div class="card" style="width: 30rem;">
         <img class="card-img-top" src="<%=data.Poster%>" alt="Movie Poster">
         <div class="card-body">
             <h5 class="card-title"><%=data.Title%></h5>
@@ -15,6 +16,7 @@
             <a href="<%=data.Website%>" class="btn btn-primary">Movie Website</a>
         </div>
     </div>
+</div>
 
 <a href="/">Search again!</a> 
 
