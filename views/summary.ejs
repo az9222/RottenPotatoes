@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="<%=data.Poster%>" alt="Movie Poster">
+        <div class="card-body">
+            <h5 class="card-title"><%=data.Title%></h5>
+            <p class="runtime"><%=data.Runtime%></p>
+            <p class="genre"><%=data.Genre%></p>
+            <p class="rating">IMDb Rating: <%=data.imdbRating%></p>
+            <p class="card-text"> <%=data.Plot%></p>
+            <a href="<%=data.Website%>" class="btn btn-primary">Movie Website</a>
+        </div>
+    </div>
+
+<a href="/">Search again!</a> 
+
+<% include ../partials/footer %>
+</body>
+
+</html>

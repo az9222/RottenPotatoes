@@ -16,10 +16,23 @@ app.get("/results", function(req, res) {
     var query = req.query.search.toLowerCase();
     var url = `http://www.omdbapi.com/?apikey=d886f1cf&s=${query}`;
     request(url, function (error, response, body){
-        if (!error & response.statusCode === 200) {
+        if (!error && response.statusCode === 200) {
             var data = JSON.parse(body);
             res.render("results", {data: data, title: query})
         }
     });
 });
+
+app.get('/movieInfo', function(req, res) {
+    var movieID = req.query.id;
+    let siteURL = `http://www.omdbapi.com/?apikey=d886f1cf&i=${movieID}&plot=full`
+    request(siteURL, function(error, response, body){
+        if (!error && response.statusCode === 200) {
+            var data = JSON.parse(body);
+            res.render("summary", {data: data})
+        }
+    })
+})
+
+
 
