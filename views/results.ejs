@@ -1,12 +1,27 @@
-<h1>Movie Titles</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+    <h1>Movie Titles</h1>
+    <ul>
+        <% data.Search.forEach(function(movie){ %>
+            <li>
+                <strong><%= movie.Title %></strong>
+                - <%= movie.Year %>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/">Search again!</a>  
+</body>
+</html>
 
-<ul>
-    <% data.Search.forEach(function(movie){ %>
-        <li>
-            <strong><%= movie.Title %></strong>
-            - <%= movie.Year %>
-        </li>
-    <% }) %>
-</ul>
 
-<a href="/">Search again!</a>
+<!-- <div class="carousel-item">
+    <img src="..." alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>...</h5>
+      <p>...</p>
+    </div>
+  </div> -->
